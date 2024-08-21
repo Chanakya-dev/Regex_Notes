@@ -1,85 +1,86 @@
 ### 1. Literals
-Definition: Characters that match themselves exactly.
-Example:
-Regex: cat
-Matches: "cat" in the string "cat"
+- Definition: Characters that match themselves exactly.
+- Example:
+- Regex: cat
+- Matches: "cat" in the string "cat"
 
 ### 2. Metacharacters
-Definition: Characters with special meanings in Regex. These are used to define patterns.
+- Definition: Characters with special meanings in Regex. These are used to define patterns.
 Common Metacharacters:
+
 . (Dot): Matches any single character except newline.
-Regex: c.t
-Matches: "cat", "cot", "cut"
+- Regex: c.t
+- Matches: "cat", "cot", "cut"
 
 ^ (Caret): Anchors the match at the start of the string.
-Regex: ^cat
-Matches: "cat" in "catfish", but not in "bobcat"
+- Regex: ^cat
+- Matches: "cat" in "catfish", but not in "bobcat"
 
 $ (Dollar): Anchors the match at the end of the string.
-Regex: cat$
-Matches: "bobcat" in "bobcat", but not in "catfish"
+- Regex: cat$
+- Matches: "bobcat" in "bobcat", but not in "catfish"
 
 [] (Brackets): Matches any single character inside the brackets (character class).
-Regex: [aeiou]
-Matches: "a", "e", "i", "o", or "u" in a string
+- Regex: [aeiou]
+- Matches: "a", "e", "i", "o", or "u" in a string
 
 | (Pipe): Acts as a logical OR between patterns.
-Regex: cat|dog
-Matches: "cat" or "dog"
+- Regex: cat|dog
+- Matches: "cat" or "dog"
 
 ### 3. Quantifiers
-Definition: Specify how many times the preceding element must occur.
+ Definition: Specify how many times the preceding element must occur.
+
 Common Quantifiers:
+ ' * ' : 0 or more times
+- Regex: ca*t
+- Matches: "ct", "cat", "caat"
 
-- ' * ' : 0 or more times
-Regex: ca*t
-Matches: "ct", "cat", "caat"
-
-- '+' : 1 or more times
-Regex: ca+t
-Matches: "cat", "caat" but not "ct"
+ '+' : 1 or more times
+- Regex: ca+t
+- Matches: "cat", "caat" but not "ct"
 
 
 ? : 0 or 1 time (optional)
-Regex: ca?t
-Matches: "cat", "ct"
+- Regex: ca?t
+- Matches: "cat", "ct"
 
 {n} : Exactly n times
-Regex: a{3}
-Matches: "aaa"
+- Regex: a{3}
+- Matches: "aaa"
 
 {n,} : n or more times
-Regex: a{3,}
-Matches: "aaa", "aaaa", etc.
+- Regex: a{3,}
+- Matches: "aaa", "aaaa", etc.
 
 {n,m} : Between n and m times
-Regex: a{2,4}
-Matches: "aa", "aaa", "aaaa"
+- Regex: a{2,4}
+- Matches: "aa", "aaa", "aaaa"
 
 ### 4. Character Classes
 Definition: A set of characters enclosed in square brackets []. It matches any one character from the set.
 Examples:
-[abc] : Matches any one of a, b, or c.
+- [abc] : Matches any one of a, b, or c.
 
-[a-z] : Matches any lowercase letter.
+- [a-z] : Matches any lowercase letter.
 
-[A-Z] : Matches any uppercase letter.
+- [A-Z] : Matches any uppercase letter.
 
-[0-9] : Matches any digit.
+- [0-9] : Matches any digit.
 
-[^abc] : Matches any character except a, b, or c.
+- [^abc] : Matches any character except a, b, or c.
 
-\d : Matches any digit (equivalent to [0-9]).
-\D : Matches any non-digit (equivalent to [^0-9]).
-\w : Matches any word character (alphanumeric + underscore).
-\W : Matches any non-word character.
+- \d : Matches any digit (equivalent to [0-9]).
+- \D : Matches any non-digit (equivalent to [^0-9]).
+- \w : Matches any word character (alphanumeric + underscore).
+- \W : Matches any non-word character.
 
 ### 5. Anchors
 
 Definition: Used to specify a position in the text.
 Examples:
-^ : Matches the start of a string.
-$ : Matches the end of a string.
+- ^ : Matches the start of a string.
+- $ : Matches the end of a string.
 
 ### 6. Groups and Capturing
 
