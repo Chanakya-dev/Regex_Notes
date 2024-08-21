@@ -92,8 +92,8 @@ Matches: "ab", "abab", "ababab"
 Definition: Some characters have special meanings in Regex. To match these characters literally, you need to escape them with a backslash (\).
 Examples:
 
-. : Matches any character, but \. matches a literal dot.
-* : Matches 0 or more of the preceding element, but \* matches a literal asterisk.
+- ' . ' : Matches any character, but \. matches a literal dot.
+- ' * ' : Matches 0 or more of the preceding element, but \* matches a literal asterisk.
 
 ### 8. Predefined Character Classes
 Examples:
