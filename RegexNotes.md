@@ -1,4 +1,4 @@
-*** 1. Literals
+*** Literals
 Definition: Characters that match themselves exactly.
 Example:
 Regex: cat
