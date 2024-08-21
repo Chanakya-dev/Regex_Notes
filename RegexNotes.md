@@ -31,7 +31,7 @@ Matches: "cat" or "dog"
 Definition: Specify how many times the preceding element must occur.
 Common Quantifiers:
 
-- '*' : 0 or more times
+- ' * ' : 0 or more times
 Regex: ca*t
 Matches: "ct", "cat", "caat"
 
